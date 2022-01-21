@@ -1,3 +1,25 @@
+let btn = document.getElementById('btn')
+
+
+btn.addEventListener('click', function(){
+
+    let password = window.document.getElementById('senha')
+
+    if(password.type == "password"){
+        password.type = "text"
+        this.style.opacity = "1"
+    }else{
+        password.type = "password"
+        this.style.opacity = ".4"
+    }
+
+
+})
+
+
+
+
+
 function verifica() {
 
     let senha = window.document.getElementById('senha')
@@ -7,6 +29,7 @@ function verifica() {
     let num = window.document.getElementById('num')
     let acent = document.getElementById('acent')
     let resul = document.getElementById('res')
+    
 
     let resultado = senha.value.split("")
     let minuscula = 0

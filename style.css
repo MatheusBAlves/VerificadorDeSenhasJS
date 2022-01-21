@@ -15,6 +15,25 @@ div#requisitos {
     text-align: left;
     font: normal 10pt arial;
 }
+div#campoSenha{
+    display: flex;
+    align-items: center;
+}
+img{
+    width: 100%;
+    
+}
+button{
+    width: 40px;
+    display: flex;
+    align-items: center;
+    margin-left: -45px;
+    background-color: transparent;
+    border: none;
+    transition: .2s;
+    opacity: .5;
+
+}
 
 p#res{
     font: normal 14pt arial;

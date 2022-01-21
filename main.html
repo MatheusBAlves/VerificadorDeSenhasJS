@@ -13,8 +13,11 @@
     <h1>Verificador de Senhas</h1>
     <section>
 
-        <input type="text" name="senha" id="senha"> <input type="button" value="Verificar" onclick="verifica()">
-
+        <div id="campoSenha">
+        <input type="password" name="senha" id="senha" placeholder="Sua senha">
+        <button id = "btn"><img src="show.png"></button> 
+        <input type="button" value="Verificar" onclick="verifica()"> 
+        </div>
         <div id="requisitos">
             <p id="req">Requisitos:</p>
             <p id="car">Minimo 8 Caracteres </p>
