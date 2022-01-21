@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        section {
+            background-color: #ececec;
+            border-radius: 10px;
+            padding: 15px;
+            width: 500px;
+            margin: auto;
+            box-shadow: 5px 5px 10px #444444;
+        }
+
+        div#requisitos {
+            text-align: left;
+            font: normal 10pt arial;
+        }
+
+        p#res{
+            font: normal 14pt arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Verificador de Senhas</h1>
+    <section>
+
+        <input type="text" name="senha" id="senha"> <input type="button" value="Verificar" onclick="verifica()">
+
+        <div id="requisitos">
+            <p id="req">Requisitos:</p>
+            <p id="car">Minimo 8 Caracteres </p>
+            <p id="mai">Minimo 1 Letra Maiuscula </p>
+            <p id="min">Minimo 1 Letra Minuscula </p>
+            <p id="num">Minimo 1 Numero </p>
+            <p id="acent"></p>
+            <p id="res"></p>
+        </div>
+
+    </section>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
