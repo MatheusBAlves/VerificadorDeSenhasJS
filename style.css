@@ -20,7 +20,8 @@ div#campoSenha{
     align-items: center;
 }
 img{
-    width: 100%;
+    width: 25px;
+    height: 20px;
     
 }
 button{
