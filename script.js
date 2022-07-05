@@ -15,7 +15,7 @@ btn.addEventListener('click', function(){
 
 })
 
-function verifica() {
+function verificaSenha() {
 
     let senha = window.document.getElementById('senha')
     let car = window.document.getElementById('car')
@@ -47,30 +47,30 @@ function verifica() {
     }
 
     if (senha.value.length < 8)
-        car.innerHTML = "Falta Caracteres Em Sua Senha! No Minimo 8 Caracteres"
+        car.innerHTML = "❌ Falta Caracteres Em Sua Senha! No Mínimo 8 Caracteres"
     else if (senha.value.length > 32)
-        car.innerHTML = "Muitos Caracteres Em Sua Senha! No Máximo 32 Caracteres"
+        car.innerHTML = "❌ Muitos Caracteres Em Sua Senha! No Máximo 32 Caracteres"
     else
-        car.innerHTML = "Caracteres Suficientes Em Sua Senha!"
+        car.innerHTML = "✔️ Caracteres Suficientes Em Sua Senha!"
 
 
     if (maiuscula == true)
-        mai.innerHTML = "Tem Letra Maiuscula Na Senha!"
+        mai.innerHTML = "✔️ Tem Letra Maiúscula Na Senha!"
     else
-        mai.innerHTML = "Não Tem Letra Maiuscula Na Senha! (Mínimo 1)"
+        mai.innerHTML = "❌ Não Tem Letra Maiúscula Na Senha! (Mínimo 1)"
 
     if (minuscula == true)
-        min.innerHTML = "Tem Letra Minuscula Na Senha!"
+        min.innerHTML = "✔️ Tem Letra Minúscula Na Senha!"
     else
-        min.innerHTML = "Não Tem Letra Minuscula Na Senha! (Mínimo 1)"
+        min.innerHTML = "❌ Não Tem Letra Minúscula Na Senha! (Mínimo 1)"
 
     if (numero == true)
-        num.innerHTML = "Tem Numero Na Senha!"
+        num.innerHTML = "✔️ Tem Número Na Senha!"
     else
-        num.innerHTML = "Não Tem Numero Na Senha! (Mínimo 1)"
+        num.innerHTML = "❌ Não Tem Número Na Senha! (Mínimo 1)"
 
     if (acento == true)
-        acent.innerHTML = "<strong>Não pode conter acento,caractere especial nem espaço em sua senha</strong>"
+        acent.innerHTML = "❌ <strong>Não pode conter caractere especial em sua senha</strong> ❌"
     else
         acent.innerHTML = ''
 

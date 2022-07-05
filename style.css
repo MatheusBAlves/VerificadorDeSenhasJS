@@ -1,33 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     text-align: center;
+    padding: 15px;
+}
+
+h1 {
+    padding-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
 }
 
 section {
     background-color: #ececec;
     border-radius: 10px;
     padding: 15px;
-    width: 500px;
+    max-width: 500px;
     margin: auto;
     box-shadow: 5px 5px 10px #444444;
+}
+
+p {
+    padding-block: 5px;
+}
+
+p#req {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 div#requisitos {
     text-align: left;
     font: normal 10pt arial;
 }
+
 div#campoSenha{
     display: flex;
     align-items: center;
 }
+
+input#senha {
+    width: 80%;
+    max-width: 240px;
+}
+
 img{
     width: 25px;
     height: 20px;
     
 }
+
 button{
-    width: 40px;
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-left: -45px;
     background-color: transparent;
     border: none;
@@ -38,4 +73,21 @@ button{
 
 p#res{
     font: normal 14pt arial;
+}
+
+footer{
+    position: absolute;
+    width: 150px;
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 0.6;
+    transition: opacity 0.5s;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer:hover {
+    opacity: 1;
 }
